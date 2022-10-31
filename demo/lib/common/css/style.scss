@@ -1,0 +1,118 @@
+@use "sass:math";
+
+
+//----------------------------------------------------------------------------
+// Layout
+//----------------------------------------------------------------------------
+body{
+  padding: 0;
+  margin: 0;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .layout_inner{
+    padding: 70px 0;
+
+    .layout_container{
+      max-width: 1064px;
+      margin-right: auto;
+      margin-left: auto;
+
+      .layout_width {
+        max-width: calc(100% - (20px * 2));
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+
+
+
+//----------------------------------------------------------------------------
+// News
+//----------------------------------------------------------------------------
+.page_news {
+
+  // -------------------------------------
+  // News
+  // -------------------------------------
+  .news_items {
+    overflow: hidden;
+
+    .news_item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &:not(:first-child){
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid #000;
+      }
+
+      .item_date {
+        width: 110px;
+        margin-right: auto;
+        align-self: center;
+
+        &+{
+          .item_ttl {
+            width: calc(100% - 110px);
+          }
+        }
+      }
+
+      .item_ttl {
+        align-self: center;
+      }
+
+      .item_content {
+        padding-top: 10px;
+        width: 100%;
+      }
+    }
+  }
+
+  .news_item {
+    .item_date {
+      font-weight: bold;
+      letter-spacing: .12px;
+    }
+    .item_ttl {
+      line-height: 1.5;
+      letter-spacing: .16px;
+    }
+    .item_content {
+      line-height: 1.5;
+      letter-spacing: .16px;
+    }
+  }
+
+
+  // -------------------------------------
+  // Accordion
+  // -------------------------------------
+  &[data-limit]{
+    position: relative;
+    padding-bottom: 30px;
+    transition: height 0.2s;
+  }
+
+  .btn_more{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: opacity 0.2s;
+    padding-left: 15px;
+
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+}
