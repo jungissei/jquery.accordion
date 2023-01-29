@@ -1,43 +1,9 @@
-@use "sass:math";
-
-
-//----------------------------------------------------------------------------
-// Layout
-//----------------------------------------------------------------------------
-body{
-  padding: 0;
-  margin: 0;
-}
-
-main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .layout_inner{
-    padding: 70px 0;
-
-    .layout_container{
-      max-width: 1064px;
-      margin-right: auto;
-      margin-left: auto;
-
-      .layout_width {
-        max-width: calc(100% - (20px * 2));
-        margin-right: auto;
-        margin-left: auto;
-      }
-    }
-  }
-}
-
-
-
-
 //----------------------------------------------------------------------------
 // News
 //----------------------------------------------------------------------------
 .page_news {
+  position: relative;
+  padding-bottom: 2.5em;
 
   // -------------------------------------
   // News

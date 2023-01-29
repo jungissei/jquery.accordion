@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link
+      rel="stylesheet"
+      href="/jquery.common/css/style.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="../lib/common/css/style.css"
+      type="text/css"
+      media="all"
+    />
+
+    <title>Open only 1 / jQuery.accordion</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <section id="template_ttl" class="page_layout layout1">
+          <div class="layout_inner">
+            <div class="layout_container">
+              <div class="layout_width">
+                <h1 class="ttl_page">Open only 1 / jQuery.accordion</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+      <main>
+        <section class="page_layout layout1">
+          <div class="layout_inner">
+            <div class="layout_container">
+              <div class="layout_width">
+                <div class="content_block">
+                  <!-- Accordion START -->
+                  <div class="page_news" data-post-accordion-limit="2">
+                    <div class="news_items" data-post-accordion="items">
+                      <div class="news_item" data-post-accordion="item">
+                        <div class="item_date">18/10/2022</div>
+                        <div class="item_ttl">
+                          ここに文章が入ります。ここに文章が入ります。
+                        </div>
+                        <div class="item_content">
+                          <div class="custom_html">
+                            <p>
+                              ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="news_item" data-post-accordion="item">
+                        <div class="item_ttl">
+                          ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                        </div>
+                        <div class="item_content">
+                          <div class="custom_html">
+                            <p>
+                              ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="news_item" data-post-accordion="item">
+                        <div class="item_date">25/10/2022</div>
+                        <div class="item_content">
+                          <div class="custom_html">
+                            <p>
+                              ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="news_item" data-post-accordion="item">
+                        <div class="item_date">14/10/2022</div>
+                        <div class="item_ttl">
+                          ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn_more"
+                      data-btn_more_text="More..."
+                      data-btn_more_text_close="Close..."
+                    >
+                      More...
+                    </button>
+                  </div>
+                  <!-- Accordion END -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+
+    <script type="text/javascript" src="/jquery.common/js/jquery.js"></script>
+
+    <script type="text/javascript" src="../lib/common/js/scripts.js"></script>
+  </body>
+</html>

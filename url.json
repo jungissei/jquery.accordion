@@ -1,0 +1,12 @@
+[
+  {
+    "text" : "Basic",
+    "url" : "/jquery.accordion/demo/basic.html"
+  }, {
+    "text" : "Open only 1",
+    "url" : "/jquery.accordion/demo/open_only_1.html"
+  }, {
+    "text" : "Posts hide at initial",
+    "url" : "/jquery.accordion/demo/posts_hide_at_initial.html"
+  }
+]
