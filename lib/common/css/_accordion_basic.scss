@@ -27,8 +27,10 @@
     // --------------------------------------
     &.accordion_plus_minus{
       .item_header {
+        display: block;
         position: relative;
         cursor: pointer;
+        width: 100%;
 
         &::before,
         &::after {
@@ -67,8 +69,10 @@
     // --------------------------------------
     &.accordion_arrow_triangle{
       .item_header {
+        display: block;
         position: relative;
         cursor: pointer;
+        width: 100%;
 
         &::after {
           display: block;
@@ -104,8 +108,10 @@
     // --------------------------------------
     &.accordion_arrow_bar{
       .item_header {
+        display: block;
         position: relative;
         cursor: pointer;
+        width: 100%;
 
         &::after {
           display: block;
