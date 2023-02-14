@@ -10,18 +10,18 @@
   margin-right: auto;
   margin-left: auto;
 
-  .accordion_item{
-
+  > div[class*="_item"]{
     &:not(:last-child){
       border-bottom: 1px solid #000;
     }
+  }
+
+  > .accordion_item{
 
     .item_panel{
       padding: 0 15px 15px 15px;
     }
-  }
 
-  .accordion_item{
     // --------------------------------------
     // Plus Minus
     // --------------------------------------
@@ -137,6 +137,73 @@
         .item_header {
           &::after {
             transform: rotate(225deg);
+          }
+        }
+      }
+    }
+  }
+
+
+  > .link_item{
+    // --------------------------------------
+    // Arrow Right 1
+    // --------------------------------------
+    &.menu_arrow_right1{
+      > .menu_item {
+        > a.item_inner {
+          position: relative;
+          padding-right: 60px;
+
+          &::after {
+            display: block;
+            position: absolute;
+            top: calc(50% - 7.5px);
+            right: 18px;
+            content: "";
+            width: 13px;
+            height: 13px;
+            border-right: 2px solid #333;
+            border-bottom: 2px solid #333;
+            transform: rotate(-45deg);
+            transition: right 0.2s;
+          }
+
+          &:hover {
+            &::after {
+              right: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    // --------------------------------------
+    // Arrow Right 2
+    // --------------------------------------
+    &.menu_arrow_right2{
+      > .menu_item {
+        > a.item_inner {
+          position: relative;
+          padding-right: 60px;
+
+          &::after {
+            display: block;
+            position: absolute;
+            top: calc(50% - 7px);
+            right: 18px;
+            content: "";
+            transition: all 0.2s;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 7px 0 7px 10px;
+            border-color: transparent transparent transparent #333;
+          }
+
+          &:hover {
+            &::after {
+              right: 10px;
+            }
           }
         }
       }
