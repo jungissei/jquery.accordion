@@ -144,66 +144,64 @@
   }
 
 
-  > .link_item{
-    // --------------------------------------
-    // Arrow Right 1
-    // --------------------------------------
-    &.menu_arrow_right1{
-      > .menu_item {
-        > a.item_inner {
-          position: relative;
-          padding-right: 60px;
+  .link_item{
 
+    // --------------------------------------
+    // Arrow Bar Right
+    // --------------------------------------
+    &.item_arrow_bar_right{
+      > a.item_anchor {
+        display: block;
+        position: relative;
+        padding: 15px 60px 15px 15px;
+
+        &::after {
+          display: block;
+          position: absolute;
+          top: calc(50% - 7.5px);
+          right: 18px;
+          content: "";
+          width: 13px;
+          height: 13px;
+          border-right: 2px solid #333;
+          border-bottom: 2px solid #333;
+          transform: rotate(-45deg);
+          transition: right 0.2s;
+        }
+
+        &:hover {
           &::after {
-            display: block;
-            position: absolute;
-            top: calc(50% - 7.5px);
-            right: 18px;
-            content: "";
-            width: 13px;
-            height: 13px;
-            border-right: 2px solid #333;
-            border-bottom: 2px solid #333;
-            transform: rotate(-45deg);
-            transition: right 0.2s;
-          }
-
-          &:hover {
-            &::after {
-              right: 10px;
-            }
+            right: 10px;
           }
         }
       }
     }
 
     // --------------------------------------
-    // Arrow Right 2
+    // Arrow Triangle Right
     // --------------------------------------
-    &.menu_arrow_right2{
-      > .menu_item {
-        > a.item_inner {
-          position: relative;
-          padding-right: 60px;
+    &.item_arrow_triangle_right{
+      > a.item_anchor {
+        position: relative;
+        padding-right: 60px;
 
+        &::after {
+          display: block;
+          position: absolute;
+          top: calc(50% - 7px);
+          right: 18px;
+          content: "";
+          transition: all 0.2s;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 7px 0 7px 10px;
+          border-color: transparent transparent transparent #333;
+        }
+
+        &:hover {
           &::after {
-            display: block;
-            position: absolute;
-            top: calc(50% - 7px);
-            right: 18px;
-            content: "";
-            transition: all 0.2s;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 7px 0 7px 10px;
-            border-color: transparent transparent transparent #333;
-          }
-
-          &:hover {
-            &::after {
-              right: 10px;
-            }
+            right: 10px;
           }
         }
       }
