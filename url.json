@@ -8,5 +8,8 @@
   }, {
     "text" : "Posts hide at initial",
     "url" : "/jquery.accordion/demo/posts_hide_at_initial.html"
+  }, {
+    "text" : "Accordion menu",
+    "url" : "/jquery.accordion/demo/accordion_menu.html"
   }
 ]

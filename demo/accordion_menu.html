@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <link
+      rel="stylesheet"
+      href="/jquery.common/css/style.css"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="../lib/common/css/style.css"
+      type="text/css"
+      media="all"
+    />
+
+    <title>Accordion menu / jQuery.accordion</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <section id="template_ttl" class="page_layout layout1">
+          <div class="layout_inner">
+            <div class="layout_container">
+              <div class="layout_width">
+                <h1 class="ttl_page">Accordion menu / jQuery.accordion</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+      <main>
+        <section class="page_layout layout1">
+          <div class="layout_inner">
+            <div class="layout_container">
+              <div class="layout_width">
+                <div class="content_block">
+                  <nav class="block_menu" data-accordion-type="basic">
+                    <div class="menu_item item_link link_arrow_bar_right">
+                      <a href="#" class="item_anchor">馬🐴</a>
+                    </div>
+                    <div
+                      class="menu_item item_accordion accordion_plus_minus"
+                      data-accordion="item"
+                    >
+                      <button
+                        class="item_header"
+                        data-accordion="trigger"
+                        aria-expanded="false"
+                        aria-controls="nav_hamburger_menu1"
+                      >
+                        <span class="header_inner">犬🐶</span>
+                      </button>
+                      <div
+                        id="nav_hamburger_menu1"
+                        class="item_panel"
+                        data-accordion="panel"
+                        style="display: none"
+                      >
+                        <div class="sub_menu">
+                          <div class="menu_item item_link link_arrow_bar_right">
+                            <a href="#" class="item_anchor"
+                              >ゴールデンレトリバー</a
+                            >
+                          </div>
+                          <div class="menu_item item_link link_arrow_bar_right">
+                            <a href="#" class="item_anchor">プードル</a>
+                          </div>
+                          <div class="menu_item item_link link_arrow_bar_right">
+                            <a href="#" class="item_anchor">チワワ</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="menu_item item_link link_arrow_triangle_right">
+                      <a href="#" class="item_anchor">お魚🐡</a>
+                    </div>
+                    <div
+                      class="menu_item item_accordion accordion_arrow_bar"
+                      data-accordion="item"
+                    >
+                      <button
+                        class="item_header"
+                        data-accordion="trigger"
+                        aria-expanded="false"
+                        aria-controls="nav_hamburger_menu2"
+                      >
+                        <span class="header_inner">猫😺</span>
+                      </button>
+                      <div
+                        id="nav_hamburger_menu2"
+                        class="item_panel"
+                        data-accordion="panel"
+                        style="display: none"
+                      >
+                        <div class="sub_menu">
+                          <div class="menu_item item_link link_arrow_bar_right">
+                            <a href="#" class="item_anchor">三毛猫</a>
+                          </div>
+                          <div class="menu_item item_link link_arrow_bar_right">
+                            <a href="#" class="item_anchor">鯖虎</a>
+                          </div>
+                          <div class="menu_item item_link link_arrow_bar_right">
+                            <a href="#" class="item_anchor">マンチカン</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+
+    <script type="text/javascript" src="/jquery.common/js/jquery.js"></script>
+
+    <script type="text/javascript" src="../lib/common/js/scripts.js"></script>
+  </body>
+</html>
